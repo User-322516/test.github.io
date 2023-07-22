@@ -1,0 +1,84 @@
+html{
+    font-size:18px;
+    color: white;
+}
+
+*{
+    margin: 0px;
+}
+
+.bgimg{
+    --bg-img: url('pexels-irina-iriser-1122639.jpg');
+    --bg-opacity: .85;
+    position:relative;
+    isolation: isolate;
+    }
+.bgimg::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    opacity:var(--bg-opacity);
+
+    background-image: url('pexels-irina-iriser-1122639.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+@font-face {
+    font-family: Kaushan;
+    src: url(fonts/KaushanScript-Regular.ttf);
+}
+@font-face {
+    font-family:playfair;
+    src: url(fonts/PlayfairDisplaySC-Regular.ttf);
+}
+
+.mysched{ /*class - multiple elements*/
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#life{
+    font-family:playfair;
+    font-size:22px;
+}
+.encouragement{
+    font-family: Kaushan;
+    font-weight: bolder; 
+}
+.indent{ /*id - single element, */
+text-indent:50px
+}
+
+.rick { /*in about.html*/
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.back{ /*in about.html*/
+    color:rgb(255, 255, 255);
+    font-family: playfair;
+    text-align: center;
+}
+.gift{
+    font-size: 22px;;
+    color:black;
+}
+.rickbg{
+    background-color: rgb(114, 100, 205);
+}
+
+a{ /*for anchor links*/
+    color:aliceblue;
+}
+a:visited{
+    color:lightgray;
+}
+a:hover, a:active{
+    color:whitesmoke;
+}
+
